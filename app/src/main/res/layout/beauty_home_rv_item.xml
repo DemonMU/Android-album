@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_rv_item"
+        android:layout_width="@dimen/beauty_home_photo_width"
+        android:layout_height="@dimen/beauty_home_photo_height"
+        android:padding="2dp" />
+</LinearLayout>

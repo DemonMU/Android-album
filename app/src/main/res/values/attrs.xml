@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DermabrasionImageView">
+        <attr name="paintColor" format="color" />
+        <attr name="paintSize" format="integer" />
+        <attr name="magnifierSide" format="integer" />
+        <attr name="android:src" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.meitu.test001.component.DermabrasionImageView
+        android:id="@+id/iv_super_beauty_pending_photo"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="matrix"
+        app:magnifierSide="300"
+        app:paintColor="@color/colorAccent"
+        app:paintSize="30" />
+
+    <RelativeLayout
+        android:id="@+id/rl_super_beauty_dermabrasion_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_super_beauty_pending_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_super_beauty_light_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/super_beauty_lightclean"
+            android:gravity="center"
+            android:text="@string/super_beauty_light_clean" />
+
+        <TextView
+            android:id="@+id/tv_super_beauty_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/super_beauty_eraser"
+            android:gravity="center"
+            android:text="@string/super_beauty_eraser" />
+
+        <TextView
+            android:id="@+id/tv_super_beauty_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/super_beauty_cancel"
+            android:gravity="center"
+            android:text="@string/super_beauty_cancel" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sb_super_beauty_dermabrasion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_super_beauty_dermabrasion_tools"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

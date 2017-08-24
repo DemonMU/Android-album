@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_titlebar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/beauty_back_btn_bg"
+            android:gravity="center"
+            android:text="相册"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_titlebar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/beauty_home_btn_bg"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_titlebar_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Camera"
+        android:textSize="17sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_titlebar_right"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/beauty_camera_btn_bg" />
+</RelativeLayout>

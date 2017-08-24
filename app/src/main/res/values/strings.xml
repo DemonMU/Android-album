@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">test001</string>
+    <string name="beauty_default_album_name">Camera</string>
+    <string name="beauty_shot_storage_path">/storage/emulated/0/DCIM/Camera/</string>
+    <string name="beauty_select_album_title_left_text">退出</string>
+    <string name="beauty_select_album_title_right_text">选择相册</string>
+    <string name="alertdialog_delete_title">美颜相机</string>
+    <string name="alertdialog_delete_message">确定删除这张照片吗？</string>
+    <string name="alertdialog_delete_positive_button_text">删除</string>
+    <string name="alertdialog_delete_negative_button_text">取消</string>
+    <string name="beauty_into_super_beauty">进入高级美颜</string>
+    <string name="home_into_beauty">高级美颜</string>
+    <string name="photo_unit">张</string>
+    <string name="super_beauty_light_clean">轻洁</string>
+    <string name="super_beauty_eraser">橡皮</string>
+    <string name="super_beauty_cancel">撤销</string>
+</resources>

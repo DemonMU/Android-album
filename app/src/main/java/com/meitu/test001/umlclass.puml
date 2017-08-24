@@ -1,0 +1,50 @@
+@startuml
+
+class PhotoBean {
+   - path : String ;
+   - size : float;
+
+   setPath(String) : void
+   setSize(float) : void
+   getPath() : String
+   getSize() :  float
+}
+
+interface BeautyModel {
+    getHomeDefaultPhotoList(Context):List<PhotoBean>
+}
+BeautyModel -> PhotoBean
+class BeautyModelImpl implements BeautyModel
+
+interface HomeView {
+     showDefaultPhotos(List<PhotoBean>) : void;
+}
+class HomeActivity implements HomeView
+HomeActivity->BeautyPresenter
+HomeActivity->HomeDefaultPhotosAdapter
+
+class HomeActivity {
+- RecyclerView;
+- BeautyPresenter;
+- HomeDefaultPhotosAdapter;
+# onCreate(Bundle) : void
+}
+
+interface BeautyPresenter {
+   homeShowDefaultPhotos() : void;
+}
+class BeautyPresenterImpl implements BeautyPresenter
+BeautyPresenterImpl->PhotoBean
+BeautyPresenterImpl->HomeView
+BeautyPresenterImpl->BeautyModel
+class BeautyPresenterImpl{
+- BeautyModel
+- HomeView
+- Context
+- List<PhotoBean>
+
++ BeautyPresenterImpl(Context,HomeView)
+- getHomeDefaultPhotoList() : void
+}
+
+@enduml

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_beauty_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d4237a"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_detail_photo_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/beauty_detail_delete_btn_bg" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/rl_beauty_detail_into_superbeauty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="2"
+                android:drawableLeft="@mipmap/beauty_detail_superbeauty_bg"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="@string/beauty_into_super_beauty"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_beauty_detail_bottom" />
+
+</RelativeLayout>
